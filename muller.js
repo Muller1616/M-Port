@@ -23,13 +23,13 @@
             }
 
             // Subject validation
-            if (!formData.subject || formData.subject.trim().length < 5) {
+            if (!formData.subject || formData.subject.trim().length < 3) {
                 errors.subject = 'Subject must be at least 5 characters long';
                 isValid = false;
             }
 
             // Message validation
-            if (!formData.message || formData.message.trim().length < 10) {
+            if (!formData.message || formData.message.trim().length < 2) {
                 errors.message = 'Message must be at least 10 characters long';
                 isValid = false;
             }
